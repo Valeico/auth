@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 import router from '../router';
+import { RouterLink } from 'vue-router';
   let teme = ref('');
   let handleBarClose = ref(true);
   teme.value = localStorage.getItem('teme');
@@ -64,10 +65,11 @@ import router from '../router';
                 </li>
                 <ul class="menu-links">
                     <li class="nav-link" v-for='(menu, i) in userData.apps' :key="i">
-                        <a href="/factura">
+                        <RouterLink :to="{ name: menu.enlace }">
+                            <p>Modi</p>
                             <i class='bx bx-home icon'></i>
-                            <span class="nav-text">{{ menu.name }}</span>
-                        </a>
+                            <span class="nav-text">{{ menu.enlace }}</span>
+                        </RouterLink>
                     </li>
                 </ul>
             </div>

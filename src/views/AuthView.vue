@@ -15,17 +15,17 @@ import router from '../router';
         apps: [
           {
             name: 'Factura',
-            enlace: '/factura',
+            enlace: 'factura',
             icon: 'bx bx-home icon'
           },
-          {
-            name: 'lista Facturas',
-            enlace: '/gridFactura'
-          },
-          {
-            name: 'Clientes',
-            enlace: '/clientes'
-          },
+          // {
+          //   name: 'lista Facturas',
+          //   enlace: 'gridFactura'
+          // },
+          // {
+          //   name: 'Clientes',
+          //   enlace: 'clientes'
+          // },
         ]
       });
       router.push('/home');
