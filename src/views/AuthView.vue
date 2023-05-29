@@ -6,10 +6,10 @@ import router from '../router';
   let pwd = ref('');
 
   const submit = async () => {
-    const authService = await AuthServices(email.value, pwd.value);
-    if(authService.jsonBolean){
+    // const authService = await AuthServices(email.value, pwd.value);
+    // if(authService.jsonBolean){
       $cookies.set('auth', {
-        authJson: authService.json,
+        // authJson: authService.json,
         user: 'Raul',
         rol: 'Admin',
         apps: [
@@ -29,9 +29,9 @@ import router from '../router';
         ]
       });
       router.push('/home');
-    } else {
-      alert(authService);
-    }
+    // } else {
+    //   alert(authService);
+    // }
   }
 </script>
 
