@@ -2,6 +2,7 @@ import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
 import vueCookies from 'vue-cookies';
+import VueApexCharts from "vue3-apexcharts";
 import './assets/main.css';
 import './assets/main.css';
 import './assets/n1Style.css';
@@ -18,6 +19,8 @@ app.use(vueCookies, {
     // secure: '',
     // sameSite: ''
 });
+
+app.use(VueApexCharts);
 
 // app.use(VueSession);
 
