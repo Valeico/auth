@@ -20,7 +20,7 @@ import router from '../router';
     <h1>Facura</h1>
     <p>{{ user.user }}</p>
     <br>
-    <button @click="closeSession">Cerrar sesion</button>
+    <!-- <button @click="closeSession">Cerrar sesion</button> -->
   </main>
 </template>
 

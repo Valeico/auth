@@ -43,7 +43,8 @@ import { RouterLink } from 'vue-router';
         <!-- Heade data user -->
         <header>
             <div class="image-text">
-                <i class='bx bx-globe bx-lg box'></i>
+                <!-- <i class='bx bx-globe bx-lg box'></i> -->
+                <i class='bx bx-user bx-lg box'></i>
                 <div class="text header-text">
                     <span class="rol">
                         {{ userData.rol }}
@@ -53,7 +54,7 @@ import { RouterLink } from 'vue-router';
                     </span>
                 </div>
             </div>
-            <i class="bx bx-chevron-right toggle" @click="handleBarClose = !handleBarClose"></i>
+            <!-- <i class="bx bx-chevron-right toggle" @click="handleBarClose = !handleBarClose"></i> -->
         </header>
 
         <!-- Nav list -->
@@ -66,8 +67,7 @@ import { RouterLink } from 'vue-router';
                 <ul class="menu-links">
                     <li class="nav-link" v-for='(menu, i) in userData.apps' :key="i">
                         <RouterLink :to="{ name: menu.enlace }">
-                            <p>Modi</p>
-                            <i class='bx bx-home icon'></i>
+                            <i class='bx bxs-calculator icon'></i>
                             <span class="nav-text">{{ menu.enlace }}</span>
                         </RouterLink>
                     </li>
@@ -75,7 +75,7 @@ import { RouterLink } from 'vue-router';
             </div>
         </div>
         <button class="logout" @click="closeSession">Cerrar sesion <i class='bx bx-log-out'></i></button>
-        <li class="mode">
+        <!-- <li class="mode">
             <div class="mon-sun">
                 <i class='bx bx-sun icon moon' ></i>
                 <i class='bx bx-moon icon sun' ></i>
@@ -86,7 +86,7 @@ import { RouterLink } from 'vue-router';
                     <div :class="[handlSwitch ? 'switch' : 'switch mo']"></div>
                 </div>
             </div>
-        </li>
+        </li> -->
     </nav>
 </template>
 
